@@ -1,0 +1,40 @@
+/* ===================================================================
+   Design Tokens — 한국의료분쟁조정중재원 웹진
+   =================================================================== */
+
+:root {
+  /* Color */
+  --color-bg: #faf9f8;
+  --color-surface: #f1efee;
+  --color-text: #201e1d;
+  --color-neutral-700: #4a4645;
+  --color-divider: #d6d2d1;
+  --color-accent: #ff3b1c;
+  --color-accent-tint: #fdece7;
+
+  /* Category accents (신뢰 → 제도 → 마음 → 나눔) */
+  --color-cat-trust: #201e1d;
+  --color-cat-system: #201e1d;
+  --color-cat-heart: #201e1d;
+  --color-cat-share: #201e1d;
+
+  /* Type */
+  --font-kr: "Pretendard", -apple-system, BlinkMacSystemFont, "Malgun Gothic", sans-serif;
+  --font-en: "Archivo", var(--font-kr);
+
+  /* Layout */
+  --max-width: 1120px;
+  --gutter: 40px;
+  --gutter-sm: 20px;
+  --rule: 2px;
+  --touch-min: 44px;
+
+  /* Spacing scale */
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 48px;
+  --space-6: 64px;
+  --space-7: 96px;
+}

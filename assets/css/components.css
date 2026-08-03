@@ -1,0 +1,421 @@
+/* ===================================================================
+   Components — hero, section heading, cards, tags, article, post-nav
+   =================================================================== */
+
+/* ---------- Tag pills ---------- */
+.tag {
+  display: inline-flex;
+  align-items: center;
+  height: 24px;
+  padding: 0 var(--space-1);
+  font-family: var(--font-en);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  border: 1px solid var(--color-text);
+  color: var(--color-text);
+}
+
+/* ---------- Section heading (01 신뢰로 잇다 …) ---------- */
+.section-heading {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-2);
+  padding-left: var(--space-2);
+  border-left: 4px solid var(--color-accent);
+  margin-bottom: var(--space-2);
+}
+
+.section-heading .num {
+  font-family: var(--font-en);
+  font-size: 15px;
+  color: var(--color-neutral-700);
+}
+
+.section-heading h2 {
+  font-size: 24px;
+}
+
+.section-intro {
+  max-width: 720px;
+  color: var(--color-neutral-700);
+  font-size: 15px;
+  margin: 0 0 var(--space-4) var(--space-2);
+}
+
+/* ---------- Hero (issue lede) ---------- */
+.hero {
+  padding-top: var(--space-6);
+  padding-bottom: var(--space-5);
+  border-bottom: var(--rule) solid var(--color-text);
+}
+
+.hero .issue-no {
+  display: inline-block;
+  font-family: var(--font-en);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-accent);
+  border-bottom: 2px solid var(--color-accent);
+  padding-bottom: 4px;
+  margin-bottom: var(--space-3);
+}
+
+.hero h1 {
+  font-size: clamp(28px, 4vw, 44px);
+  max-width: 20ch;
+  margin-bottom: var(--space-3);
+}
+
+.hero p {
+  max-width: 640px;
+  font-size: 17px;
+  color: var(--color-neutral-700);
+}
+
+.hero .hero-meta {
+  display: flex;
+  gap: var(--space-4);
+  margin-top: var(--space-4);
+  font-size: 13px;
+  color: var(--color-neutral-700);
+}
+
+/* ---------- Card / card grid ---------- */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--rule);
+  background: var(--color-divider);
+  border: var(--rule) solid var(--color-text);
+}
+
+@media (max-width: 720px) {
+  .card-grid { grid-template-columns: 1fr; }
+}
+
+.card {
+  background: var(--color-surface);
+  padding: var(--space-3);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.card:hover { background: var(--color-accent-tint); }
+
+.card-tags {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 4px;
+}
+
+.card h3 {
+  font-family: var(--font-kr);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.card p {
+  font-size: 14px;
+  color: var(--color-neutral-700);
+  margin: 0;
+}
+
+.category-section {
+  padding-top: var(--space-6);
+  padding-bottom: var(--space-6);
+  border-bottom: var(--rule) solid var(--color-divider);
+}
+
+.category-section:last-of-type { border-bottom: none; }
+
+/* ---------- Breadcrumb ---------- */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-size: 13px;
+  color: var(--color-neutral-700);
+  padding-top: var(--space-3);
+  padding-bottom: var(--space-3);
+}
+
+.breadcrumb a:hover { color: var(--color-accent); }
+
+.breadcrumb .sep { color: var(--color-divider); }
+
+/* ---------- Article (콘텐츠 상세 페이지) ---------- */
+.post {
+  padding-top: var(--space-5);
+  padding-bottom: var(--space-6);
+}
+
+.post-header {
+  /*max-width: 760px;*/
+  margin-bottom: var(--space-5);
+  padding-bottom: var(--space-5);
+  border-bottom: var(--rule) solid var(--color-text);
+}
+
+.post-header .card-tags { margin-bottom: var(--space-2); }
+
+.post-header h1 {
+  font-size: clamp(26px, 3.6vw, 38px);
+  margin-bottom: var(--space-2);
+}
+
+.post-header .post-lede {
+  font-size: 17px;
+  color: var(--color-neutral-700);
+  margin: 0;
+}
+
+.post-meta {
+  display: flex;
+  gap: var(--space-3);
+  margin-top: var(--space-3);
+  font-size: 13px;
+  color: var(--color-neutral-700);
+}
+
+.post-body {
+  /*max-width: 720px;*/
+  font-size: 16px;
+}
+
+.post-body h2 {
+  font-size: 21px;
+  margin: var(--space-5) 0 var(--space-2);
+}
+
+.post-body h2:first-child { margin-top: 0; }
+
+.post-body p { margin-bottom: var(--space-3); }
+
+.post-body figure {
+  margin: var(--space-4) 0;
+}
+
+.post-body figure img {
+  width: 100%;
+  border: 1px solid var(--color-divider);
+}
+
+.post-body figcaption {
+  margin-top: var(--space-1);
+  font-size: 13px;
+  color: var(--color-neutral-700);
+}
+
+.post-body blockquote {
+  margin: var(--space-4) 0;
+  padding: var(--space-2) var(--space-3);
+  border-left: 4px solid var(--color-accent);
+  background: var(--color-surface);
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.post-body blockquote p:last-child { margin-bottom: 0; }
+
+.post-signoff {
+  margin-top: var(--space-5);
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--color-divider);
+  font-weight: 700;
+}
+
+/* ---------- Post prev/next nav ---------- */
+.post-nav {
+  /*max-width: 760px;*/
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: var(--rule) solid var(--color-text);
+  margin-top: var(--space-5);
+}
+
+@media (max-width: 600px) {
+  .post-nav { grid-template-columns: 1fr; }
+}
+
+.post-nav a {
+  display: block;
+  padding: var(--space-3);
+  border-right: 1px solid var(--color-divider);
+}
+
+.post-nav a:last-child { border-right: none; }
+
+.post-nav .dir {
+  display: block;
+  font-family: var(--font-en);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--color-neutral-700);
+  margin-bottom: 6px;
+}
+
+.post-nav .title {
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.post-nav a:hover .title { color: var(--color-accent); }
+
+.post-nav .next-cell { text-align: right; }
+
+/* ---------- List page header ---------- */
+.list-header {
+  padding-top: var(--space-5);
+  padding-bottom: var(--space-4);
+  border-bottom: var(--rule) solid var(--color-text);
+}
+
+.list-header .section-heading { border-left-color: var(--color-accent); }
+
+.list-header .section-intro { margin-bottom: 0; }
+
+/* ---------- Filter bar ---------- */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+  margin: var(--space-4) 0;
+}
+
+.filter-btn {
+  min-height: var(--touch-min);
+  padding: 0 var(--space-3);
+  border: 1px solid var(--color-divider);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-neutral-700);
+}
+
+.filter-btn:hover { border-color: var(--color-text); color: var(--color-text); }
+
+.filter-btn[aria-pressed="true"] {
+  background: var(--color-text);
+  border-color: var(--color-text);
+  color: var(--color-bg);
+}
+
+/* ---------- Case / article list ---------- */
+.item-list {
+  border-top: var(--rule) solid var(--color-text);
+}
+
+.item-row {
+  display: grid;
+  grid-template-columns: 100px 1fr auto;
+  align-items: start;
+  gap: var(--space-3);
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid var(--color-divider);
+}
+
+.item-row:hover { background: var(--color-accent-tint); }
+
+.item-row.is-hidden { display: none; }
+
+@media (max-width: 640px) {
+  .item-row {
+    grid-template-columns: 1fr;
+    gap: var(--space-1);
+  }
+}
+
+.item-dept {
+  font-family: var(--font-en);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-neutral-700);
+  padding-top: 2px;
+}
+
+.item-main h3 {
+  font-family: var(--font-kr);
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.item-main p {
+  font-size: 14px;
+  color: var(--color-neutral-700);
+  margin: 0;
+}
+
+.item-round {
+  font-size: 13px;
+  color: var(--color-neutral-700);
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .item-round { padding-top: 0; }
+}
+
+.list-empty {
+  padding: var(--space-5) 0;
+  text-align: center;
+  color: var(--color-neutral-700);
+  font-size: 14px;
+  display: none;
+}
+
+.list-empty.is-visible { display: block; }
+
+/* ---------- Q&A accordion ---------- */
+.qna-list {
+  border-top: var(--rule) solid var(--color-text);
+}
+
+.qna-item {
+  border-bottom: 1px solid var(--color-divider);
+}
+
+.qna-question {
+  width: 100%;
+  min-height: var(--touch-min);
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+  padding: var(--space-3) 0;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.qna-question .q-mark {
+  font-family: var(--font-en);
+  color: var(--color-accent);
+  flex-shrink: 0;
+}
+
+.qna-question .q-text { flex: 1; }
+
+.qna-question .chevron {
+  font-family: var(--font-en);
+  color: var(--color-neutral-700);
+  transition: transform .2s ease;
+  flex-shrink: 0;
+}
+
+.qna-question[aria-expanded="true"] .chevron { transform: rotate(180deg); }
+
+.qna-answer-body {
+  display: flex;
+  gap: var(--space-2);
+  padding: 0 0 var(--space-3) calc(1em + var(--space-2));
+  font-size: 15px;
+  color: var(--color-neutral-700);
+}
+
+.qna-answer-body .a-mark {
+  font-family: var(--font-en);
+  color: var(--color-neutral-700);
+  flex-shrink: 0;
+}
