@@ -1,4 +1,4 @@
-(function () {
+window.initSiteNav = function () {
   var toggle = document.querySelector('.menu-toggle');
   var mobileNav = document.getElementById('mobile-nav');
 
@@ -27,4 +27,4 @@
       if (submenu) submenu.classList.toggle('is-open', !isOpen);
     });
   });
-})();
+};

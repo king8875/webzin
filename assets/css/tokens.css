@@ -23,7 +23,7 @@
   --font-en: "Archivo", var(--font-kr);
 
   /* Layout */
-  --max-width: 1120px;
+  --max-width: 1280px;
   --gutter: 40px;
   --gutter-sm: 20px;
   --rule: 2px;
