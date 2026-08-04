@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>한국의료분쟁조정중재원 웹진 — 6호</title>
+  <meta name="description" content="한국의료분쟁조정중재원이 전하는 온라인 웹진 6호. 새로 도입되거나 달라지는 제도를 깊이 들여다봅니다.">
+
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&display=swap">
+
+  <link rel="stylesheet" href="../assets/css/tokens.css">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="icon" href="../icon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#faf9f8">
+</head>
+<body>
+
+  <div id="site-header"></div>
+
+  <main>
+    <section class="issue-header">
+      <div class="issue-row-wrap">
+        <div class="issue-row">
+          <ul class="issue-mini-list">
+            <li>
+              <a class="issue-mini" href="issue-1.html">
+                <span class="issue-mini-num">창간호</span>
+                <span class="issue-mini-title">신뢰에서 나눔까지</span>
+              </a>
+            </li>
+            <li>
+              <a class="issue-mini" href="issue-2.html">
+                <span class="issue-mini-num">2호</span>
+                <span class="issue-mini-title">제도를 다시 보다</span>
+              </a>
+            </li>
+            <li>
+              <a class="issue-mini" href="issue-3.html">
+                <span class="issue-mini-num">3호</span>
+                <span class="issue-mini-title">마음을 듣다</span>
+              </a>
+            </li>
+            <li>
+              <a class="issue-mini" href="issue-4.html">
+                <span class="issue-mini-num">4호</span>
+                <span class="issue-mini-title">나눔을 잇다</span>
+              </a>
+            </li>
+            <li>
+              <a class="issue-mini" href="issue-5.html">
+                <span class="issue-mini-num">5호</span>
+                <span class="issue-mini-title">신뢰를 다지다</span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="issue-chip">
+            <span class="issue-chip-meta">
+              <span>6호</span>
+              <span>2026.01.01</span>
+            </span>
+            <span class="issue-chip-title">제도의 안쪽</span>
+          </div>
+
+          <ul class="issue-mini-list">
+            <li>
+              <a class="issue-mini" href="../index.html">
+                <span class="issue-mini-num">7호</span>
+                <span class="issue-mini-title">마음이 닿는 거리</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="issue-intro">
+          <p>
+            올해 새로 도입되거나 달라지는 제도의 세부 내용을
+            좀 더 깊이 들여다봅니다.
+          </p>
+          <p><a class="issue-more-link" href="../system/support.html">당사자 조력제도 더 보기</a></p>
+        </div>
+        <p class="issue-publisher">발행처 · 한국의료분쟁조정중재원</p>
+      </div>
+    </section>
+
+    <!-- 하이라이트 (pen-online.com 참고 — 이미지 카드, 실제 이미지 없어 회색 처리) -->
+    <section class="category-section container" aria-labelledby="cat-highlights">
+      <div class="section-heading">
+        <h2 id="cat-highlights">하이라이트</h2>
+      </div>
+      <div class="feature-grid">
+        <a class="feature-card" href="#">
+          <span class="feature-thumb" aria-hidden="true"></span>
+          <span class="feature-tag">내과계</span>
+          <h3 class="feature-title">만성질환 관리 중 발생한 약물 부작용 조정 사례</h3>
+          <p class="feature-excerpt">장기 처방 과정에서의 설명의무 이행 여부를 중심으로 조정이 이뤄진 사례입니다.</p>
+        </a>
+        <a class="feature-card" href="../heart/stats/index.html">
+          <span class="feature-thumb" aria-hidden="true"></span>
+          <span class="feature-tag">의료분쟁 주요 통계 현황</span>
+          <h3 class="feature-title">2025년 의료분쟁 주요 통계 현황</h3>
+          <p class="feature-excerpt">상담 · 조정 · 감정 등 주요 통계를 한눈에 보여주며 회차마다 갱신됩니다.</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- 1순위: 진료과별 의료분쟁 조정 사례 -->
+    <section class="category-section container" aria-labelledby="cat-cases">
+      <div class="section-heading">
+        <h2 id="cat-cases">진료과별 의료분쟁 조정 사례</h2>
+      </div>
+      <p class="section-intro">
+        내과계 · 외과계 · 기타계로 나눈 실제 조정 사례를 확인하세요. 회차마다 새로운 사례가 누적됩니다.
+      </p>
+
+      <div class="filter-bar" role="group" aria-label="진료과 필터">
+        <button class="filter-btn" type="button" data-filter="all" aria-pressed="true">전체</button>
+        <button class="filter-btn" type="button" data-filter="내과계" aria-pressed="false">내과계</button>
+        <button class="filter-btn" type="button" data-filter="외과계" aria-pressed="false">외과계</button>
+        <button class="filter-btn" type="button" data-filter="기타계" aria-pressed="false">기타계</button>
+      </div>
+
+      <ul class="item-list" data-reveal-step="5">
+        <li class="item-row" data-dept="내과계">
+          <span class="item-dept">내과계</span>
+          <div class="item-main">
+            <h3><a href="#">만성질환 관리 중 발생한 약물 부작용 조정 사례</a></h3>
+            <p>장기 처방 과정에서의 설명의무 이행 여부를 중심으로 조정이 이뤄진 사례입니다.</p>
+          </div>
+          <span class="item-round">창간호</span>
+        </li>
+        <li class="item-row" data-dept="외과계">
+          <span class="item-dept">외과계</span>
+          <div class="item-main">
+            <h3><a href="#">수술 후 감염 발생에 따른 책임 소재 조정 사례</a></h3>
+            <p>수술 전후 관리 절차와 감염 관리 기준을 중심으로 감정이 진행된 사례입니다.</p>
+          </div>
+          <span class="item-round">창간호</span>
+        </li>
+        <li class="item-row" data-dept="기타계">
+          <span class="item-dept">기타계</span>
+          <div class="item-main">
+            <h3><a href="#">영상 진단 지연으로 인한 치료 시기 논란 조정 사례</a></h3>
+            <p>진단 지연과 치료 결과 사이의 인과관계를 검토한 조정 사례입니다.</p>
+          </div>
+          <span class="item-round">창간호</span>
+        </li>
+        <li class="item-row" data-dept="내과계">
+          <span class="item-dept">내과계</span>
+          <div class="item-main">
+            <h3><a href="#">검사 결과 설명 부족으로 인한 분쟁 조정 사례</a></h3>
+            <p>검사 결과 고지 방식과 시점에 대한 다툼을 다룬 조정 사례입니다.</p>
+          </div>
+          <span class="item-round">창간호</span>
+        </li>
+        <li class="item-row" data-dept="외과계">
+          <span class="item-dept">외과계</span>
+          <div class="item-main">
+            <h3><a href="#">마취 관리 소홀 관련 조정 사례</a></h3>
+            <p>마취 전 평가와 회복 관찰 과정의 적정성을 중심으로 진행된 사례입니다.</p>
+          </div>
+          <span class="item-round">창간호</span>
+        </li>
+        <li class="item-row" data-dept="기타계">
+          <span class="item-dept">기타계</span>
+          <div class="item-main">
+            <h3><a href="#">응급실 초기 대응 지연 조정 사례</a></h3>
+            <p>응급 상황에서의 초동 대응 절차를 둘러싼 조정 사례입니다.</p>
+          </div>
+          <span class="item-round">창간호</span>
+        </li>
+      </ul>
+
+      <p class="list-empty">해당 진료과의 사례가 아직 없습니다.</p>
+      <button class="more-btn" type="button">더보기</button>
+    </section>
+
+    <!-- 2순위: 의료분쟁 주요 통계 현황 -->
+    <section class="category-section container" aria-labelledby="cat-stats">
+      <div class="section-heading">
+        <h2 id="cat-stats">의료분쟁 주요 통계 현황</h2>
+      </div>
+      <p class="section-intro">
+        상담 · 조정 · 감정 등 의료분쟁 관련 주요 통계를 한눈에 보여줍니다. 회차마다 최신 통계가 누적됩니다.
+      </p>
+      <div class="post-list" data-reveal-step="5">
+        <a class="post-list-item" href="../heart/stats/index.html">
+          <h3 class="post-list-title">2025년 의료분쟁 주요 통계 현황</h3>
+          <p class="post-list-excerpt">상담 · 조정 · 감정 등 주요 통계를 한눈에 보여주며 회차마다 갱신됩니다.</p>
+        </a>
+      </div>
+      <button class="more-btn" type="button">더보기</button>
+    </section>
+
+    <!-- 3순위: 의료중재원 이용 후기 -->
+    <section class="category-section container" aria-labelledby="cat-reviews">
+      <div class="section-heading">
+        <h2 id="cat-reviews">의료중재원 이용 후기</h2>
+      </div>
+      <p class="section-intro">
+        이용자의 경험을 진솔한 목소리로 담아 전합니다.
+      </p>
+      <div class="post-list" data-reveal-step="5">
+        <a class="post-list-item" href="../share/reviews/story-1.html">
+          <span class="post-list-tag">의료중재원 이용 후기</span>
+          <h3 class="post-list-title">우리들의 이야기 1</h3>
+          <p class="post-list-excerpt">이용자의 경험을 진솔한 목소리로 담아 전달합니다.</p>
+        </a>
+        <a class="post-list-item" href="../share/reviews/story-2.html">
+          <span class="post-list-tag">의료중재원 이용 후기</span>
+          <h3 class="post-list-title">우리들의 이야기 2</h3>
+          <p class="post-list-excerpt">핵심 메시지를 모바일에서도 쉽게 읽히도록 구성했습니다.</p>
+        </a>
+      </div>
+      <button class="more-btn" type="button">더보기</button>
+    </section>
+
+    <!-- 4순위: 의료중재원 소식 -->
+    <section class="category-section container" aria-labelledby="cat-news">
+      <div class="section-heading">
+        <h2 id="cat-news">의료중재원 소식</h2>
+      </div>
+      <p class="section-intro">
+        감정위원 · 상담위원 등 중재원 구성원의 이야기를 담아, 기관을 사람의 관점에서 소개합니다.
+      </p>
+      <div class="post-list" data-reveal-step="5">
+        <a class="post-list-item" href="../share/news/index.html">
+          <h3 class="post-list-title">의료중재원 소식 — 구성원 이야기</h3>
+          <p class="post-list-excerpt">감정위원 · 상담위원 등 구성원의 이야기를 사람의 관점에서 소개합니다.</p>
+        </a>
+      </div>
+      <button class="more-btn" type="button">더보기</button>
+    </section>
+
+    <!-- 5순위: 전문가 칼럼·인터뷰 -->
+    <section class="category-section container" aria-labelledby="cat-column">
+      <div class="section-heading">
+        <h2 id="cat-column">전문가 칼럼 · 인터뷰</h2>
+      </div>
+      <p class="section-intro">
+        의료 · 법률 전문가의 칼럼과 인터뷰를 연재해 제도에 대한 깊이 있는 시각을 전합니다.
+      </p>
+      <div class="post-list-empty">
+        <span class="post-list-tag">하반기 예정</span>
+        하반기 게재 예정입니다.
+      </div>
+    </section>
+
+    <!-- 6순위: 바로가기 링크 모음 -->
+    <section class="category-section container" aria-labelledby="cat-quicklinks">
+      <div class="section-heading">
+        <h2 id="cat-quicklinks">바로가기</h2>
+      </div>
+      <p class="section-intro">
+        기관 소개와 제도 안내, 자주 묻는 질문을 빠르게 확인하세요.
+      </p>
+      <div class="quick-link-grid">
+        <a class="quick-link-item" href="../trust/greeting.html">인사말 <span class="arrow">→</span></a>
+        <a class="quick-link-item" href="../trust/about.html">개요 · 연혁 <span class="arrow">→</span></a>
+        <a class="quick-link-item" href="../trust/business.html">주요 사업 안내 <span class="arrow">→</span></a>
+        <a class="quick-link-item" href="../trust/offices.html">본원 · 지원 소개 <span class="arrow">→</span></a>
+        <a class="quick-link-item" href="../system/index.html">2025년 신규 · 변경 제도 <span class="arrow">→</span></a>
+        <a class="quick-link-item" href="../system/support.html">1. 당사자 조력제도 <span class="arrow">→</span></a>
+        <a class="quick-link-item" href="../system/ombudsman.html">2. 의료분쟁 옴부즈만 제도 <span class="arrow">→</span></a>
+        <a class="quick-link-item" href="../system/compensation.html">3. 불가항력 의료사고 보상제도 <span class="arrow">→</span></a>
+        <a class="quick-link-item" href="../share/qna.html">의료분쟁 Q&amp;A <span class="arrow">→</span></a>
+      </div>
+    </section>
+
+    <!-- 7순위: 의료사고 대응 가이드 (파일 다운로드) -->
+    <section class="category-section container" aria-labelledby="cat-guide">
+      <div class="section-heading">
+        <h2 id="cat-guide">의료사고 대응 가이드</h2>
+      </div>
+      <p class="section-intro">
+        의료사고 발생 시 상황별 대응 방법을 단계별로 정리한 실용 가이드입니다.
+      </p>
+      <div class="download-card">
+        <span class="download-card-badge">PDF</span>
+        <div class="download-card-body">
+          <p class="download-card-title">의료사고 대응 가이드</p>
+          <p class="download-card-desc">의료사고 발생 시 상황별 대응 방법을 단계별로 정리한 실용 가이드</p>
+        </div>
+        <a class="download-card-action" href="#" download>다운로드</a>
+      </div>
+      <p style="margin-top: var(--space-2);"><a class="issue-more-link" href="../share/guide.html">가이드 자세히 보기</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-block">
+        <p class="footer-org">한국의료분쟁조정중재원</p>
+        <p class="footer-meta">Korea Medical Dispute Mediation and Arbitration Agency</p>
+      </div>
+      <div class="footer-block footer-meta">
+        <h2>발행 정보</h2>
+        <p>6호</p>
+        <p>발행일 2026.01.01</p>
+      </div>
+      <div class="footer-block">
+        <h2>이전 회차</h2>
+        <ul class="footer-archive">
+          <li><a href="../index.html">7호 · 마음이 닿는 거리</a></li>
+          <li><a href="issue-5.html">5호 · 신뢰를 다지다</a></li>
+          <li><a href="issue-4.html">4호 · 나눔을 잇다</a></li>
+          <li><a href="issue-3.html">3호 · 마음을 듣다</a></li>
+          <li><a href="issue-2.html">2호 · 제도를 다시 보다</a></li>
+          <li><a href="issue-1.html">창간호 · 신뢰에서 나눔까지</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p>© 2025 한국의료분쟁조정중재원. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/nav.js"></script>
+  <script src="../assets/js/include-header.js"></script>
+  <script src="../assets/js/filter.js"></script>
+  <script src="../assets/js/reveal.js"></script>
+</body>
+</html>
