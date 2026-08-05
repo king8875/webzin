@@ -3,15 +3,17 @@
 window.initSiteNav = function () {
   var issueSelect = document.querySelector('.issue-select');
   if (issueSelect) {
-    var currentPath = window.location.pathname;
-    if (currentPath === '/' || currentPath === '') currentPath = '/index.html';
+    // 옵션 value는 호스팅 서브패스에 안전한 상대경로라 전체 경로 비교가 안 통한다.
+    // 파일명만 비교해 현재 페이지에 맞는 옵션을 고른다.
+    var currentFile = window.location.pathname.split('/').pop() || 'index.html';
 
     Array.prototype.forEach.call(issueSelect.options, function (opt) {
-      opt.selected = opt.value === currentPath;
+      var optFile = opt.value.split('/').pop();
+      opt.selected = optFile === currentFile;
     });
 
     issueSelect.addEventListener('change', function () {
-      window.location.href = issueSelect.value;
+      if (issueSelect.value) window.location.href = issueSelect.value;
     });
   }
 
