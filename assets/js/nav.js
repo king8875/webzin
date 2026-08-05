@@ -1,4 +1,27 @@
+
+
 window.initSiteNav = function () {
+  var issueSelect = document.querySelector('.issue-select');
+  if (issueSelect) {
+    var currentPath = window.location.pathname;
+    if (currentPath === '/' || currentPath === '') currentPath = '/index.html';
+
+    Array.prototype.forEach.call(issueSelect.options, function (opt) {
+      opt.selected = opt.value === currentPath;
+    });
+
+    issueSelect.addEventListener('change', function () {
+      window.location.href = issueSelect.value;
+    });
+  }
+
+  var archiveSelect = document.querySelector('.footer-archive-select');
+  if (archiveSelect) {
+    archiveSelect.addEventListener('change', function () {
+      if (archiveSelect.value) window.location.href = archiveSelect.value;
+    });
+  }
+
   var toggle = document.querySelector('.menu-toggle');
   var mobileNav = document.getElementById('mobile-nav');
 
@@ -27,4 +50,30 @@ window.initSiteNav = function () {
       if (submenu) submenu.classList.toggle('is-open', !isOpen);
     });
   });
+
+  var header = document.querySelector('.site-header');
+  if (header) {
+    var lastScrollY = window.scrollY;
+    var ticking = false;
+
+    var onScroll = function () {
+      var currentY = window.scrollY;
+
+      if (currentY > lastScrollY && currentY > header.offsetHeight) {
+        header.classList.add('site-header--hidden');
+      } else {
+        header.classList.remove('site-header--hidden');
+      }
+
+      lastScrollY = currentY;
+      ticking = false;
+    };
+
+    window.addEventListener('scroll', function () {
+      if (!ticking) {
+        window.requestAnimationFrame(onScroll);
+        ticking = true;
+      }
+    });
+  }
 };

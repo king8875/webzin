@@ -1,43 +1,57 @@
 <header class="site-header">
   <div class="container header-inner">
-    <nav class="gnb gnb-left" aria-label="주요 메뉴 왼쪽">
-      <ul>
-        <li>
-          <a class="gnb-link" href="/trust/greeting.html"><span class="num">01</span>신뢰로 잇다</a>
-          <ul class="submenu">
-            <li class="submenu-group">
-              <span class="submenu-label">인사말</span>
-              <ul>
-                <li><a href="/trust/greeting.html">한국의료분쟁조정중재원장 인사말</a></li>
-              </ul>
-            </li>
-            <li class="submenu-group">
-              <span class="submenu-label">의료중재원 소개</span>
-              <ul>
-                <li><a href="/trust/about.html">개요 · 연혁</a></li>
-                <li><a href="/trust/business.html">주요 사업 안내</a></li>
-                <li><a href="/trust/offices.html">본원 · 지원 소개</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a class="gnb-link" href="/system/index.html"><span class="num">02</span>제도로 잇다</a>
-          <ul class="submenu">
-            <li class="submenu-group">
-              <span class="submenu-label">의료분쟁 주요 제도 안내</span>
-              <ul>
-                <li><a href="/system/index.html">2025년 신규 · 변경 제도</a></li>
-                <li><a href="/system/support.html">1. 당사자 조력제도</a></li>
-                <li><a href="/system/ombudsman.html">2. 의료분쟁 옴부즈만 제도</a></li>
-                <li><a href="/system/compensation.html">3. 불가항력 의료사고 보상제도</a></li>
-              </ul>
-            </li>
-            <li><a href="/system/column/index.html">전문가 칼럼 · 인터뷰</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
+    <div class="header-inner-left">
+      <div class="issue-select-wrap">
+        <select class="issue-select" aria-label="회차 선택">
+          <option value="/index.html">7호 · 마음이 닿는 거리</option>
+          <option value="/issues/issue-6.html">6호 · 제도의 안쪽</option>
+          <option value="/issues/issue-5.html">5호 · 신뢰를 다지다</option>
+          <option value="/issues/issue-4.html">4호 · 나눔을 잇다</option>
+          <option value="/issues/issue-3.html">3호 · 마음을 듣다</option>
+          <option value="/issues/issue-2.html">2호 · 제도를 다시 보다</option>
+          <option value="/issues/issue-1.html">창간호 · 신뢰에서 나눔까지</option>
+        </select>
+      </div>
+
+      <nav class="gnb gnb-left" aria-label="주요 메뉴 왼쪽">
+        <ul>
+          <li>
+            <a class="gnb-link" href="/trust/greeting.html">신뢰로 잇다</a>
+            <ul class="submenu">
+              <li class="submenu-group">
+                <span class="submenu-label">인사말</span>
+                <ul>
+                  <li><a href="/trust/greeting.html">한국의료분쟁조정중재원장 인사말</a></li>
+                </ul>
+              </li>
+              <li class="submenu-group">
+                <span class="submenu-label">의료중재원 소개</span>
+                <ul>
+                  <li><a href="/trust/about.html">개요 · 연혁</a></li>
+                  <li><a href="/trust/business.html">주요 사업 안내</a></li>
+                  <li><a href="/trust/offices.html">본원 · 지원 소개</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="gnb-link" href="/system/index.html">제도로 잇다</a>
+            <ul class="submenu">
+              <li class="submenu-group">
+                <span class="submenu-label">의료분쟁 주요 제도 안내</span>
+                <ul>
+                  <li><a href="/system/index.html">2025년 신규 · 변경 제도</a></li>
+                  <li><a href="/system/support.html">당사자 조력제도</a></li>
+                  <li><a href="/system/ombudsman.html">의료분쟁 옴부즈만 제도</a></li>
+                  <li><a href="/system/compensation.html">불가항력 의료사고 보상제도</a></li>
+                </ul>
+              </li>
+              <li><a href="/system/column/index.html">전문가 칼럼 · 인터뷰</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
 
     <a class="logo" href="/index.html">
       <img src="/assets/img/h-logo.png" alt="한국의료분쟁조정중재원 웹진">
@@ -46,14 +60,14 @@
     <nav class="gnb gnb-right" aria-label="주요 메뉴 오른쪽">
       <ul>
         <li>
-          <a class="gnb-link" href="/heart/cases/index.html"><span class="num">03</span>마음으로 잇다</a>
+          <a class="gnb-link" href="/heart/cases/index.html">마음으로 잇다</a>
           <ul class="submenu">
             <li><a href="/heart/cases/index.html">진료과별 조정 사례</a></li>
             <li><a href="/heart/stats/index.html">의료분쟁 주요 통계 현황</a></li>
           </ul>
         </li>
         <li>
-          <a class="gnb-link" href="/share/guide.html"><span class="num">04</span>나눔으로 잇다</a>
+          <a class="gnb-link" href="/share/guide.html">나눔으로 잇다</a>
           <ul class="submenu">
             <li class="submenu-group">
               <span class="submenu-label">의료중재원 이용 후기</span>
@@ -149,3 +163,13 @@
     </div>
   </nav>
 </header>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+      });
+    });
+  });
+</script>
