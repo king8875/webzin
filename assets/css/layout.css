@@ -8,7 +8,12 @@
   top: 0;
   z-index: 100;
   /*background: #fff;*/
-  background: var(--color-bg);
+  /*background: var(--color-bg);*/
+  /*background: transparent;*/
+  /*backdrop-filter: blur(10px);*/
+
+  background: color-mix(in srgb, #ffffff 88%, transparent);
+  backdrop-filter: saturate(180%) blur(14px);
   transition: transform .25s ease;
 }
 
@@ -41,7 +46,7 @@
     justify-self: end;
     display: flex;
     align-items: center;
-    gap: var(--space-4);
+    gap: var(--space-7);
   }
 
   .logo { grid-column: 2; grid-row: 1; justify-self: center; }
@@ -54,14 +59,25 @@
 }
 
 .logo {
-  font-family: var(--font-en);
-  font-weight: 800;
-  font-size: 20px;
-  letter-spacing: -0.02em;
-  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+  padding: 0 20px;
 }
-
-.logo:hover { color: var(--color-text); }
+.logo > span{
+  color: #8c8c8c;
+  align-self: stretch;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: .34em;
+  text-align: right;
+  text-indent: .34em;
+}
+.logo:hover {
+  color: var(--color-text);
+}
 
 .logo img {
   display: block;
@@ -101,11 +117,11 @@
   cursor: pointer;
 }
 
-.issue-select:hover,
-.issue-select:focus {
-  border-color: var(--color-accent);
-  color: var(--color-accent);
-}
+/*.issue-select:hover,*/
+/*.issue-select:focus {*/
+/*  border-color: var(--color-accent);*/
+/*  color: var(--color-accent);*/
+/*}*/
 
 /* Mobile hamburger */
 .menu-toggle {

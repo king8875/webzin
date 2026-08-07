@@ -37,16 +37,16 @@
   /*border-bottom: var(--rule) solid var(--color-text);*/
 }
 
-.issue-header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: var(--rule);
-  height: 57px;
-  background: var(--color-accent);
-  transform: translateX(-50%);
-}
+/*.issue-header::before {*/
+/*  content: "";*/
+/*  position: absolute;*/
+/*  top: 0;*/
+/*  left: 50%;*/
+/*  width: var(--rule);*/
+/*  height: 57px;*/
+/*  background: var(--color-accent);*/
+/*  transform: translateX(-50%);*/
+/*}*/
 
 /* ---------- Issue row (회차 전체가 한 줄에, 현재 호는 항상 정중앙) ---------- */
 .issue-row-wrap {
@@ -101,7 +101,7 @@
 
 .issue-mini-num {
   font-family: var(--font-en);
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 700;
 }
 
@@ -345,6 +345,7 @@
   min-width: 0;
   padding: 0;
   border-bottom: none;
+  gap: var(--space-1);
 }
 
 [aria-labelledby="cat-news"] .post-list-thumb {
